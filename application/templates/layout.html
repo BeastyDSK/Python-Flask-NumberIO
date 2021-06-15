@@ -7,7 +7,7 @@
     <title>{{title}}</title>
     <link rel="stylesheet" href=" {{ url_for( 'static' , filename = 'css/style.css' ) }} ">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     {% include "includes/header.html" %}
@@ -15,6 +15,21 @@
     {% block main %}{% endblock main %}
     
     {% include "includes/footer.html" %}
-    <script src=" {{ url_for( 'static', filename = 'js/main.js' ) }} "></script>
+<!--     <script src=" {{ url_for( 'static', filename = 'js/main.js' ) }} "></script> -->
+    <script>
+        function checker(type) {
+        var p = document.querySelector(".res" + type);
+        p.style.visibility = "hidden";
+
+        fetch(`/check/${type}/${document.querySelector(".in" + type).value}`).then(data => {
+            return data.json();
+        }).then(res => {
+            p.textContent = res.res;
+            p.style.visibility = "visible";
+        }).catch(err => {
+            console.error(err);
+        });
+        }
+    </script>
 </body>
 </html>
