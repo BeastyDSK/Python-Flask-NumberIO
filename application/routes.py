@@ -8,6 +8,10 @@ result = [
     {"res":"False"}
     ]
 
+@app.route('/favicon.ico') 
+def favicon(): 
+    return "hi"
+
 #Router for Home page
 @app.route("/")
 def home():
