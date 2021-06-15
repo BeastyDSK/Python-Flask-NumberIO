@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+    <main class="main">
+        <section class="primeCheck">
+            <h4>Prime Number Checker</h4>
+            <div>
+                <input type="number" class="in0" value=0 min="0">
+                <button onclick="checker(0);">Check</button>
+            </div>
+            <p class="res res0"></p>
+        </section>
+
+        <section class="palindromeCheck">
+            <h4>Palindrome Number Checker</h4>
+            <div>
+                <input type="number" class="in1"value=0 min="0">
+                <button onclick="checker(1);" type="submit">Check</button>
+            </div>
+            <p class="res res1"></p>
+        </section>
+
+        <section class="fibCheck">
+            <h4>Fibonacci Number Checker</h4>
+            <div>
+                <input type="number"  class="in2"value=0 min="0">
+                <button onclick="checker(2);" type="submit">Check</button>
+            </div>
+            <p class="res res2"></p>
+        </section>
+
+         <section class="perfectCheck">
+            <h4>Perfect Number Checker</h4>
+            <div>
+                <input type="number"  class="in3"value=0 min="0">
+                <button onclick="checker(3);" type="submit">Check</button>
+            </div>
+            <p class="res res3"></p>
+        </section>
+
+        <section class="HappyCheck">
+            <h4>Happy Number Checker</h4>
+            <div>
+                <input type="number"  class="in4"value=0 min="0">
+                <button onclick="checker(4);" type="submit">Check</button>
+            </div>
+            <p class="res res4"></p>
+        </section>
+
+        <section class="armstrongCheck">
+            <h4>Armstrong Number Checker</h4>
+            <div>
+                <input type="number"  class="in5"value=0 min="0">
+                <button onclick="checker(5);" type="submit">Check</button>
+            </div>
+            <p class="res res5"></p>
+        </section>
+    </main>
+{% endblock main %}

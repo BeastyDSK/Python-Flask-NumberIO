@@ -1,0 +1,119 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    background-blend-mode: luminosity;
+}
+
+/* Header Start */
+.header {
+    padding: 1rem;
+    font-family: "Black Ops One";
+    font-weight: 100;
+    text-align: center;
+}
+
+.heading {
+    display: inline-block;
+    color:transparent;
+    background: linear-gradient(black,rgb(40,98,132),black);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+/* Header End */
+
+
+/* Main Start */
+.main {
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 2rem;
+}
+
+.main section {
+    padding: 0.8rem;
+    background: rgb(61, 61, 61);
+}
+
+.main section h4 {
+    text-transform: uppercase;
+    text-rendering: optimizeSpeed;
+    padding-bottom: 0.7rem;
+}
+
+.main section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.main section div input {
+    border: 3px solid rgb(215,215,215);
+    padding: 0.5rem;
+    margin-right: 1rem;
+    width: 70% ;
+    border-radius: 0.5rem;
+}
+.main section div button {
+    flex-grow: 1;
+    background: rgb(106, 106, 116);
+    border: 1.4px solid #f1f1f1;
+    border-radius: 1.5rem;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.main section h4 , .res{
+    text-align: center;
+}
+
+.res {
+    height: 3rem;
+    color: black;
+    padding: 1.5rem;
+    visibility: hidden;
+}
+
+input, button , section, .res {
+    font-family: Montserrat;
+}
+
+input:focus, button:focus {
+    outline-style: none;
+}
+/* Main End */
+
+
+
+/* Media Query */
+@media(max-width:800px)
+{
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main section {
+        width: 100%;
+    }
+}
+
+@media(min-width:800px) and (max-width:1000px)
+{
+    .main {
+        grid-template-columns: 45% 45%;
+    }
+}
+/* Media Query */
