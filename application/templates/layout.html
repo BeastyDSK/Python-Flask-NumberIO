@@ -7,6 +7,8 @@
     <meta name="description" content="Number IO. Basic python application used to check diffrent types of Numbers">
     <title>Number IO</title>
 <!--     <link rel="stylesheet" href=" {{ url_for( 'static' , filename = 'css/style.css' ) }} "> -->
+    <link rel="icon" href="{{ url_for('static',filename='icons/icon.png')  }}">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <style>
@@ -138,7 +140,7 @@
     
     {% block main %}{% endblock main %}
     
-    {% include "includes/footer.html" %}
+    <!-- {% include "includes/footer.html" %} -->
 <!--     <script src=" {{ url_for( 'static', filename = 'js/main.js' ) }} "></script> -->
     <script>
         function checker(type) {
