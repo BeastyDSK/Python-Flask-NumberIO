@@ -29,7 +29,6 @@ body {
 }
 /* Header End */
 
-
 /* Main Start */
 .main {
     margin: 0 auto;
@@ -72,6 +71,7 @@ body {
     border-radius: 1.5rem;
     font-family: inherit;
     font-weight: 500;
+    cursor:pointer;
 }
 
 .main section h4 , .res{
